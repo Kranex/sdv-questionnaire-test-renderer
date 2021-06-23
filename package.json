@@ -1,10 +1,10 @@
 {
-  "name": "new-renderer",
+  "name": "sdv-questionnaire-test-renderer",
   "version": "1.0.0",
   "description": "Made with create-react-library",
   "author": "Kranex",
   "license": "MIT",
-  "repository": "Kranex/new-renderer",
+  "repository": "Kranex/sdv-questionnaire-test-renderer",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",

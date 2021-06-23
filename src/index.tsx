@@ -1,10 +1,20 @@
 import * as React from 'react'
-import styles from './styles.module.css'
 
 interface Props {
-  text: string
+  content: any
 }
 
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+export const Questionnaire = ({ content }: Props) => {
+  const questions = content.questions
+    .slice(1)
+    .map((q: any) => <li key={q.id}>{q.title.en}</li>)
+  return (
+    <div>
+      <p>
+        The new render still needs implementing. These are the questions from
+        the questionnnaire we were given:
+      </p>
+      <ul>{questions}</ul>
+    </div>
+  )
 }
